@@ -1,0 +1,18 @@
+<head>
+  <title>simple</title>
+</head>
+
+<body>
+  <h1>New York Code and Design Academy Chat</h1>
+{{> loginButtons align="left"}}<br>
+  {{> nycda_chat}}
+</body>
+
+<template name="nycda_chat">
+  <input id="text">
+  <button id="send">Send</button>
+    {{#each chats}}
+    <strong>{{student}}</strong> || {{chat}}<br>
+    {{/each}}
+</template>
+
